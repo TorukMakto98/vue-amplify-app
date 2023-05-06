@@ -165,7 +165,7 @@ export default {
         }
     },
     mounted() {
-        axios.get('http://localhost:8081/api/v2/phase-two-first-group-b')
+        axios.get('http://3.77.227.198:5000/api/v2/phase-two-first-group-b')
             .then(
                 response => {
                     this.action_body = response.data
@@ -176,7 +176,7 @@ export default {
                 error => console.log(error)
             )
 
-        axios.get('http://localhost:8081/api/v2/phase-two-group-b')
+        axios.get('http://3.77.227.198:5000/api/v2/phase-two-group-b')
             .then(
                 response => {
                     this.marines_body = response.data
@@ -215,7 +215,7 @@ export default {
                 }
             }
 
-            axios.post('http://localhost:8081/api/v2/phase-one-processing', this.request_body)
+            axios.post('http://3.77.227.198:5000/api/v2/phase-one-processing', this.request_body)
                 .then(
                     response => {
                         this.response_body = response.data

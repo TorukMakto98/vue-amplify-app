@@ -132,7 +132,7 @@ export default {
     msg: String
   },
   mounted() {
-    axios.get('http://localhost:8081/raw-data')
+    axios.get('http://3.77.227.198:5000/raw-data')
         .then(
             response => {
               this.response_body = response.data

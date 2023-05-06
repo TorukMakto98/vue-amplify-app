@@ -140,7 +140,7 @@ export default {
             }
           }
 
-          axios.post('http://131.130.122.25:9021/api/v2/phase-one-processing', this.request_body)
+          axios.post('http://3.77.227.198:5000/api/v2/phase-one-processing', this.request_body)
               .then(
                   response => {
                     this.response_body = response.data

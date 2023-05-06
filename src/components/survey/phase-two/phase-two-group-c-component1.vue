@@ -94,7 +94,7 @@ export default {
     },
     mounted() {
 
-        axios.get('http://localhost:8081/api/v2/phase-two-group-c')
+        axios.get('http://3.77.227.198:5000/api/v2/phase-two-group-c')
             .then(
                 response => {
                     this.response_body = response.data
@@ -182,7 +182,7 @@ export default {
 
             localStorage.setItem('phase2-q1', this.q1)
 
-            axios.post('http://localhost:8081/api/v2/phase-one-processing', this.request_body)
+            axios.post('http://3.77.227.198:5000/api/v2/phase-one-processing', this.request_body)
                 .then(
                     response => {
                         this.response_body = response.data
