@@ -88,7 +88,7 @@ export default {
     mounted() {
         // TODO: insert a function for sending specific feature parameters to backend and response with a new response body
 
-        axios.get('http://3.77.227.198:5000/action-radar')
+        axios.get('3.77.227.198:8080/action-radar')
             .then(
                 response => {
                     this.response_body = response.data
@@ -160,7 +160,7 @@ export default {
                 }
             }
 
-            axios.post('http://3.77.227.198:5000/api/v2/phase-one-processing', this.request_body)
+            axios.post('3.77.227.198:8080/api/v2/phase-one-processing', this.request_body)
                 .then(
                     response => {
                         this.response_body = response.data

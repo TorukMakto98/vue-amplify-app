@@ -119,7 +119,7 @@ export default {
     },
     mounted() {
 
-        axios.get("http://3.77.227.198:5000/api/v2/phase-three-group-c-flowchart").then(
+        axios.get("3.77.227.198:8080/api/v2/phase-three-group-c-flowchart").then(
             response => {
                 this.responseBody = response.data;
             }
@@ -154,7 +154,7 @@ export default {
                 }
             }
 
-            axios.post('http://3.77.227.198:5000/api/v2/phase-one-processing', this.request_body)
+            axios.post('3.77.227.198:8080/api/v2/phase-one-processing', this.request_body)
                 .then(
                     response => {
                         this.response_body = response.data
