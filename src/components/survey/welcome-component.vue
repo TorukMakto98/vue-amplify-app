@@ -73,7 +73,7 @@ export default {
                 "ip_address": ipAddress
             }
 
-            axios.post('http://3.77.227.198:8080/api/v3/welcome', this.request_body)
+            axios.post('3.77.227.198:8080/api/v3/welcome', this.request_body)
                 .then(
                     response => {
                         this.response_body = response.data
