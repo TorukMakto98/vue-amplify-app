@@ -15,7 +15,7 @@ import DashboardViewNew from "@/views/DashboardViewNew.vue";
 
 const responseBody = ref(null);
 
-axios.get("http://localhost:8081/api/v2/phase-four-group-c-a-flowchart").then(
+axios.get("http://3.73.125.175/api/v2/phase-four-group-c-a-flowchart").then(
     response => {
         responseBody.value = response.data;
     }
