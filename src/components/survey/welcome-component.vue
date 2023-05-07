@@ -73,12 +73,7 @@ export default {
                 "ip_address": ipAddress
             }
 
-            axios.post('http://3.77.227.198:8080/api/v2/welcome', this.request_body, {
-                headers: {
-                    'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Allow-Methods': 'POST, PUT, PATCH, GET, DELETE, OPTIONS',
-                }
-            },)
+            axios.post('http://18.198.79.94/api/v2/welcome', this.request_body)
                 .then(
                     response => {
                         this.response_body = response.data
