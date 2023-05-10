@@ -75,7 +75,6 @@ export default {
 
             axios.post('http://3.77.227.198:8080/api/v2/welcome', this.request_body, {
                 headers: {
-                    'Access-Control-Allow-Origin': '*',
                     'Content-Type': 'application/json',
                 },
             })
