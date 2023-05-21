@@ -73,7 +73,7 @@ export default {
                 "ip_address": ipAddress
             }
 
-            axios.post('http://3.77.227.198:8080/api/v2/welcome', this.request_body, {
+            axios.post('http://test-app-env.eba-rqce5gff.eu-central-1.elasticbeanstalk.com:8080/api/v2/test-api', this.request_body, {
                 headers: {
                     'Content-Type': 'application/json',
                 },
@@ -92,10 +92,6 @@ export default {
                 .catch(
                     error => console.log(error)
                 )
-
-            //TODO: define start_timestamp for the user clicks the 'start' button
-
-
         },
 
         // setValueinLocalStorage() {
